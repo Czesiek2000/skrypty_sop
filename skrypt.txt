@@ -1,0 +1,63 @@
+#!/bin/bash
+
+ 
+
+#Ćwiczenie 2. Napisz skrypt, który pobierze jako argument nazwę katalogu i:
+
+ 
+
+#if [ "$#" -ne 1 ] ; then
+if test  "$#" -ne 1  ; then
+    echo "usage 1: $0 DIRECTORY"
+    exit 1
+fi
+if [ ! -d "$1" ] ; then
+    echo "usage 2: $0 DIRECTORY"
+    exit 1
+fi
+if [ ! -r "$1" ] ; then
+    echo "usage 3: $0 DIRECTORY"
+    exit 1
+fi
+
+ 
+
+DIR="$1"
+
+ 
+
+ 
+#    - wyświetli nazwy wszystkie plików z tego katalogu (wyłącznie nazwy)
+ls "$DIR"
+#    - policzy i wyświetli informacje ile tych plików tam jest
+#    - policzy i wyświetli informacje ile tam jest katalogów
+#    - policzy i wyświetli informacje ile tam jest w sumie katalogów i plików
+
+ 
+
+#Skrypt ma działać wyłącznie jeżeli zostanie uruchomiony z jednym argument, który 
+#jest katalogiem do odczytu.
+
+ 
+
+
+exit 0
+
+ 
+
+#Ćwiczenie 1. Napisz skrypt, który wyświetli wszystkie pliki 
+#z katalogu /dev, które:
+ls /dev
+echo "------------------------------"
+echo "    - są urządzeniami blokowymi."
+ls -l /dev | grep "^b"
+echo "------------------------------"
+echo "    - na końcu nazwy mają cyfrę."
+ls  /dev | grep "[0-9]$"
+echo "------------------------------"
+echo "    - są urządzeniami blokowymi i na końcu nazwy mają cyfrę."
+ls -l /dev | grep "^b.*[0-9]$"
+ls -l /dev | grep "^b" | grep "[0-9]$"
+echo "------------------------------"
+#    - w nazwie mają wyłącznie i dokładnie 3 dowolne znaki.
+#    - w nazwie mają nie więcej niż 3 dowolne znaki.

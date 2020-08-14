@@ -1,0 +1,589 @@
+SKRYPT #1.1
+# Przykladowe skrypty z konstrukcja if
+# W celu wykonania poszczegolna konstrukcje nalezy odkomentowac.
+# if test 1 == 1 ; then echo PRAWDA ; else echo FALSZ ; fi
+# if [ 1 -eq 1 ] ; then echo PRAWDA ; else echo FALSZ ; fi
+# kolejny przyklad
+# i=9
+# if test $i == 4 ; then echo PRAWDA ; else echo FALSZ ; fi
+# kolejny przyklad
+# if [ $((3 + 6))  == 9 ] ; then echo PRAWDA ; else echo FALSZ ; fi
+
+SKRYPT #1.2
+# Przyklad na odwołanie do argumentow i ich iteracje
+# Wywolanie: ./skrypt1.2 Ala ma kota
+echo Program $0 wywolano z $# argumentami:
+echo pierwszy: $1
+echo drugi: $2
+echo trzeci: $3
+echo wszystkie: $@
+shift 2
+echo Program $0 wywolano z $# argumentami:
+echo pierwszy: $1
+echo drugi: $2
+echo trzeci:$3
+echo wszystkie: $@
+
+SKRYPT #1.3
+# Skrypt okresla loiczbe znakow w parametrze wywolania tego skryptu.
+case $1 in
+  ?) echo $1 ma jeden znak ;;
+  ??) echo $1 ma dwa znaki ;;
+  ???) echo $1 ma trzy znaki ;;
+  *) echo $1 na wiecej niz trzy znaki ;;
+esac
+
+SKRYPT #1.4
+# Program wypisuje date w jezyku polskim lub angielskim
+if test $# != 1 ; then
+  echo Program wymaga podania dokladnie jednego parametru:
+  echo a - data w wersji angielskiej
+  echo p - data w wersji polskiej
+else
+  case $1 in
+    a) date ;;
+    p) set `date`
+       case $1 in
+         Mo*) DZIEN=Poniedzialek;;
+	 Tu*) DZIEN=Wtorek;;
+	 We*) DZIEN=Sroda;;
+	 Th*) DZIEN=Czwartek;;
+	 Fr*) DZIEN=Piatek;;
+	 Sa*) DZIEN=Sobota;;
+	 Su*) DZIEN=Niedziela;;
+       esac
+       case $2 in
+         Jan*) MIESIAC=stycznia;;
+	 Feb*) MIESIAC=lutego;;
+	 Mar*) MIESIAC=marca;;
+	 Apr*) MIESIAC=kwietnia;;
+	 Ma*)  MIESIAC=maja;;
+	 Jun*) MIESIAC=czerwca;;
+	 Jul*) MIESIAC=lipca;;
+	 Aug*) MIESIAC=sierpnia;;
+	 Sep*) MIESIAC=wrzesnia;;
+	 Oct*) MIESIAC=pazdziernika;;
+	 Nov*) MIESIAC=listopada;;
+	 Dec*) MIESIAC=grudnia;;
+       esac
+       echo $DZIEN, $3 $MIESIAC $6, $4;;
+     esac
+fi
+
+SKRYPT #2.1
+# Napisz skrypt, ktory w zaleznosci od wartosci dwoch argumentow
+# jego wywolania wyswietla nastepujaca wartosc:
+#   arg1 < arg2 to wartosc: -1
+#   arg1 = arg2 to wartosc:  0
+#   arg1 > arg2 to wartosc:  1
+# Przykladowe wywolanie skryptu ./skrypt2.1 3 4 daje wartosc -1
+if test $# -ne 2 ; then
+  echo Niepoprawna liczba argumentow - wywolanie ./skrypt2.1 arg1 arg2
+else
+  if [ $1 -lt $2 ] ; then
+    echo -1
+  elif [ $1 == $2 ] ; then
+    echo 0
+  else
+    echo 1
+  fi
+fi
+# KONIEC
+
+SKRYPT #2.2
+# Napisac skrypt wyswietlajacy wszystkie pliki z rozszerzeniem .doc oraz .txt
+# znajdujace sie w biezacym katalogu, wypsujac nastepujacy komunikat:
+# Plik o nazwie <tu nazwa pliku> jest plikiem tekstowym.
+# Uwaga! Pliki musza istniec! (zalozone np. poleceniem touch).
+for z in *.doc *.txt ; do
+   echo Plik o nazwie $z jest plikiem tekstowym.
+done
+# KONIEC
+
+SKRYPT #2.3
+# Napisz skrypt, ktory wyswietla w kolejnych liniach wartosci od
+# wartosci zadanej jako argument wywolania tego skryptu 
+# do wartosci 1 z krokiem -1
+if [ $# -ne 1 ] ; then
+  echo "Skrypt wymaga parametru - liczba calkowita dodatnia."
+else
+ i=$1
+ while [ $i -gt 0 ] ; do
+   echo $i
+   i=`expr $i - 1 `
+ done
+fi
+#KONIEC
+
+SKRYPT #2.4
+# Napisz skrypt. ktory wykonuje nastepujace operacje na pliku wejsciowym:
+# 1. linie, ktore zawieraja parzysta liczbe slow zostana zapisane w pliku
+#    o nazwie PARZYSTE
+# 2. linie, ktore zawieraja nieparzysta liczbe słow zostana zapisane w pliku
+#    o nazwie NIEPARZYSTE
+# 3. zostanie wypisany komunikat mowiacy o liczbie linii z parzysta 
+#    i nieparzysta liczba slow.
+# Nazwa pliku jest podawana jako argument wywolania skryptu.
+# Skrypt powinien zawierac mechanizmy sprawdzania poprawnosci uruchomienia
+# skryptu (liczba argumentow) oraz istnienia pliku wejsciowego.
+if [ ! $# -eq 1 ] ; then
+  echo "Skrypt powinien byc wywolany z jednym argumentem - nazwa pliku wejsciowego."
+else
+  PLIKWE=$1
+  LPAR=0
+  LNPAR=0
+  if [ ! -f $PLIKWE ] ; then
+    echo "Plik wejsciowy $PLIKWE o podanej nazwie nie istnieje."
+  else
+    while read LINIA ; do
+      wynik=$((`echo $LINIA | wc -w` % 2 ))
+      if [ $wynik -eq 0 ] ; then
+        echo $LINIA >> PARZYSTE
+	let LPAR++
+      else
+        echo $LINIA >> NIEPARZYSTE
+	let LNPAR++
+      fi
+    done < "$PLIKWE"
+  echo "W pliku wejsciowym było $LPAR linii z parzysta i $LNPAR linii z nieparzysta liczba słow."
+  fi
+fi
+#KONIEC
+
+SKRYPT #3.1
+# Napisz skrypt, ktory wypisze nazwy tych katalogow z katalogu biezacego, 
+# ktore zawieraja jednoczesnie: co najmniej dwa pliki do odczytu i co 
+# najmniej trzy pliki wykonywalne.
+for KATALOG in * ; do
+  if [ -d $KATALOG ] ; then
+    cd $KATALOG
+    LR=0
+    LX=0
+    for PLIK in * ; do
+      if [ -f $PLIK ] ; then
+        if [ -x $PLIK ] ; then
+	  let LX++
+	fi
+	if [ -r $PLIK ] ; then
+	  let LR++
+	fi
+      fi
+    done
+    if [ $LR -gt 1 -a $LX -gt 2 ] ; then
+      echo "Katalog $KATALOG zawiera minimum dwa pliki do odczytu i trzy pliki wykonywalne."
+    fi
+    cd ".."
+  fi
+done
+#KONIEC
+    
+SKRYPT #3.2
+# Napisz skrypt, ktory dla kazdego pliku, znajdujacego sie w biezacym katalogu,
+# o nazwie spelniajacej nastepujace warunki:
+# 1. rozpoczynajacej sie od dowolnego znaku,
+# 2. na kolejnych znakach posiadajacej string 2017
+# 3. i dalej mogacych miec dowolne znaki w nazwie pliku,
+# 4. posiadajacy rozszerzenie nazwy txt
+# okresli ilosc zawartych w nim poszczegolnych liczb: parzystych, nieparzystych
+# i zero. Zakladamy, ze dane zawarte w plikach sa poprawne - tzn. pliki nie
+# zawieraja innych danych niz wyzej wymienione. Przykladowy komunikat, bedacy
+# efektem dziala skryptu przedstawiono ponizej:
+# Plik a201701.txt zawiera: 10 parzystych i 5 nieparzystych liczb oraz 5 liczb zero.
+for PLIK in `ls ?2017*.txt` ; do
+  if [ -f $PLIK ] ; then
+    LP=0
+    LNP=0
+    LZ=0
+    while read LINIA ; do
+      for LICZBA in $LINIA ; do
+        if [ $LICZBA -eq 0 ] ; then
+	  let LZ++
+	else
+	  WYNIK=$(($LICZBA % 2 ))
+	  if [ $WYNIK -eq 0 ] ; then
+	    let LP++
+	  else
+	    let LNP++
+	  fi
+	fi
+      done
+    done < "$PLIK"
+    echo "Plik $PLIK zawiera $LP parzystych i $LNP nieparzystych liczb"
+    echo " oraz $LZ liczb zero."
+  fi
+done
+#KONIEC
+        
+SKRYPT #3.3
+# Napisz skrypt, ktory wykona nastepujace oparacje na pliku wejsciowym:
+# 1. do kazdej linii pliku doda na jej poczatku tekst w postaci stringu linia
+# wraz z biezacym numerem linii,
+# 2. jezeli linia nie zawiera zadnych znakow, to w linii tej napisze komunikat:
+# o nastepujacej postaci: # << TA LINIA INTENCJONALNIE JEST PUSTA ! >>
+# 3. dopisz na koncu pliku informacje mowiace o liczbie niepustych i pustych
+# liniach pliku oraz liczba znakow i slow zawartych w tym pliku.
+# Nazwa pliku wejsciowego jest podawana jako argument wywolania skryptu.
+# Skrypt powinien zawierac mechanizmy sprawdzenia poprawnosci uruchomienia
+# tego skryptu (liczba argumentow) oraz istnienia pliku wejsciowego.
+if [ $# -ne 1 ] ; then
+  echo "Skrypt wymaga jednego argumentu - nazwy pliku."
+else
+  PLIKWE=$1
+  if [ ! -f $PLIKWE ] ; then
+    echo "Plik o podanej nazwie $PLIKWE nie istnieje w biezacym katalogu."
+  else
+    NRLINII=1
+    LLNP=0
+    LLP=0
+    LZ=0
+    LS=0
+    while read LINIA ; do
+      WYNIK=$((`echo $LINIA | wc -c` - 1))
+      if [ $WYNIK -eq 0 ] ; then
+        echo "# << TA LINIA INTENCJONALNIE JEST PUSTA ! >>" >> PLIKWY
+	let LLP++
+      else
+        echo "linia $NRLINII $LINIA" >> PLIKWY
+	let LLNP++
+	let NRLINII++
+	LZNAKOW=$((`echo $LINIA | wc -c` - 1))
+	LSLOW=$((`echo $LINIA | wc -w`))
+	LZ=`expr $LZ + $LZNAKOW`
+	LS=`expr $LS + $LSLOW`
+      fi
+    done < "$PLIKWE"
+    echo "Liczba linii pustych: $LLP" >> PLIKWY
+    echo "Liczba linii niepustych: $LLNP" >> PLIKWY
+    echo "Liczba znaków: $LZ" >> PLIKWY
+    echo "Liczba slow: $LS" >> PLIKWY
+  fi
+fi
+
+SKRYPT #4.0
+# Napisz skrypt, ktory wypisuje swoje argumenty w odwrotnej kolejnosci
+# for zmienna; do   - przebiega przez wszystkie argumenty skryptu
+for k in $@ ; do
+  WYNIK="$k $WYNIK"
+done
+echo $WYNIK
+
+SKRYPT #4.0a
+# Napisz skrypt, ktory wypisuje swoje argumenty w odwrotnej kolejnosci
+# for zmienna; do   - przebiega przez wszystkie argumenty skryptu
+for k ; do
+  WYNIK="$k $WYNIK"
+done
+echo $WYNIK
+
+SKRYPT #4.1
+# Napisac skrypt, ktory poda najdluzsze slowo w plikach podanych
+# jako jego argumenty. 
+# Dlugosc slowa mozna latwo uzyskac nastepujaca skladnia: 
+# ${#zmienna}
+#
+for slowo in `cat $@` ; do
+  if [ "${#slowo}" -gt "${#wynik}" ] ; then
+    wynik="$slowo"
+  fi
+done
+echo "Najdluzsze słowo to: $wynik"
+ 
+SKRYPT #4.2
+# Definicja tabeli
+#
+pora_dnia=(swit poranek poludnie popoludnie wieczor noc)
+for ((z=1 ; $z <= 3 ; z++ )) ; do
+  echo ${pora_dnia[$z]}
+done
+#
+for (( y=6 ; $y >= 2 ; y-- )) ; do
+   echo ${pora_dnia[$y]}
+done
+#
+echo ""
+for (( x=0 ; $x <= 3 ; x++ )) ; do
+   echo ${pora_dnia[$x]}
+done
+
+SKRYPT #4.3
+# Napisac skrypt, ktory na podstawie skrotu lub numeru miesiaca
+# podaje pelna nazwe angielska i polska miesiaca.
+echo -n "Podaj numer lub skrot nazwy miesiaca: "
+read MIESIAC
+case $MIESIAC in
+  1|01|Jan*|st*) echo "$MIESIAC to January (styczen)";;
+  2|02|Feb*|lu*) echo "$MIESIAC to February (luty)";;
+  3|03|Mar*|ma*) echo "$MIESIAC to March (marzec)";;
+  4|04|Apr*|kw*) echo "$MIESIAC to April (kwiecien)";;
+  *) echo "$MIESIAC to nieznany miesiac.";;
+esac
+
+SKRYPT #4.5
+# Napisac skrypt, ktory wyrysowuje z gwiazdek kwadrat o boku
+# zadanym argumentem wywolania tego skryptu. 
+# Kwadrat ma byc wypelniony gwiazdkami. Skrypt zawiera
+# sprawdzenie poprawnosci argumentu wywolanego skryptu:
+# argument musi byc wiekszy od zera i mniejszy od 40
+#
+if [ $# -ne 1 ] ; then
+  echo "Skrypt musi byc wywolany z argumentem w postaci wielkosci boku kwadratu."
+else  
+  if [ $1 -lt 1 -o $1 -gt 39 ] ; then 
+    echo "Argument musi byc wiekszy niz zero lub mniejszy niz 40"
+  else
+    for (( y=1 ; $y <= $1 ; y ++ )) ; do
+      for (( x=1 ; $x <= $1 ; x++ )) ; do
+         echo -n "*"
+      done
+      echo ""
+    done
+  fi
+fi
+
+SKRYPT #4.6
+# Napisac skrypt, ktory wyrysowuje z gwiazdek kwadrat o boku
+# zadanym argumentem wywolania tego skryptu. 
+# Kwadrat ma byc pusty - ma miec obramowanie z gwiazdek.
+# Skrypt zawiera sprawdzenie poprawnosci argumentu wywolanego skryptu:
+# argument musi byc wiekszy od dwoch i mniejszy od 40
+#
+if [ $# -ne 1 ] ; then
+  echo "Skrypt musi byc wywolany z argumentem w postaci wielkosci boku kwadratu."
+else  
+  if [ $1 -lt 3 -o $1 -gt 39 ] ; then 
+    echo "Argument musi byc wiekszy niz dwa i mniejszy niz 40"
+  else
+    for (( y=1 ; $y <= $1 ; y ++ )) ; do
+      if [ $y -eq 1 -o $y -eq $1 ] ; then
+         for (( x=1 ; $x <= $1 ; x++ )) ; do
+           echo -n "*"
+         done
+         echo ""
+      else
+          echo -n "*"
+          for (( z=2 ; $z < $1 ; z ++)) ; do
+	     echo -n " "
+	  done
+	  echo "*"
+      fi
+    done
+  fi
+fi
+
+SKRYPT #4.7
+# Definiowanie podprogramu:
+# nazwa ()
+#   {
+#      instrukcje
+#   }
+# Prezyklad: napisz podprogram oblicznia silni
+silnia ()
+{ 
+if [ $1 == 0 ] ; then
+  WYNIK=1
+else
+  silnia `expr $1 - 1`
+  WYNIK=`expr $WYNIK \* $1`
+fi
+}
+# Wywolanie
+silnia $1
+echo $WYNIK
+
+SKRYPT #5.1
+# Napisz skrypt, ktory wypisze liczbe elementow zadanej tablicy
+# oraz wszystkie zadanej elementy tablicy
+#
+tab=(pon wt sr czw pt so nie)
+echo Liczba elementów tablicy: ${#tab[@]}
+a=0
+until [ $a -eq ${#tab[@]} ]
+do
+  echo tab[$a] = ${tab[$[a++]]}
+done
+
+SKRYPT #5.3
+# Napisac skrypt oczytujacy linia po linii z zadanego pliku
+#
+PLIK="ala.txt"
+cat "$PLIK" | while read LINIA ; do
+  echo $LINIA
+done
+
+SKRYPT #5.4
+# Napisz skrypt, który wylicza sumę liczb calkowitych wprowadzonych z klawiatury.
+# Zakladamy, ze wszystkie liczby sa poprawne
+echo "Ten skrypt sumuje podane ponizej liczby całkowite:"
+echo -n "Podaj sekwencje liczb: " 
+read CIAG
+set $CIAG
+echo "Lista liczb:$@"
+echo "liczba liczb:$#"
+SUMA=0
+LICZBA=$#
+for ((licz=1; $licz<=$LICZBA; licz++)) ; do
+   echo "licz: $licz"
+   echo "argument: $1"
+   SUMA=`expr $SUMA + $1`
+   echo "suma:$SUMA"
+   shift
+   echo "Argumenty pozostale: $@"
+done
+echo "SUMA KONCOWA:$SUMA"
+
+SKRYPT #5.5
+# Napisz skrypt, ktory odczytuje linia po linii z pliku, nastepnie 
+# wylicza ilosc znakow w linii i na koncu podaje ilosc znakow w pliku
+# Do liczenia znakow nalezy wykorzystac polecenie wc
+IZ=0
+plik="ala.txt"
+while read LINIA
+do
+   echo "linia: $LINIA"
+   IZWL=$((`echo $LINIA | wc -c`))
+   echo "ilosc znakow w linii: $IZWL"
+   let IZ=$IZ+$IZWL
+   echo "IZ: $IZ"  
+done < "$plik"
+echo "Ilosc znakow w pliku to: $IZ"   
+
+SKRYPT #5.6
+# Napisz skrypt o nazwie skrypt, ktory drukuje z gwiazd choinke.
+# Przykladowa choinka (minimalna o podstawie 5) wyglada tak:
+#    *
+#   ***
+#  *****
+#    *
+# Jako argument wywolania tego skryptu jest podana dolna krawedz - podstawa
+# tej choinki. Nalezy sprawdzac poprawnosc tego argumentu musi byc 
+# nieparzysty i wiekszy od 4
+if [ $# -ne 1 ]; then
+  echo "Bledna ilosc argumentow wywolania tego skryptu."
+else
+  if [ $1 -lt 5 ] ; then
+    echo "Argument musi byc wiekszy od 4"
+  else
+    let WYNIK=$1%2
+    if [ $WYNIK -eq 0 ] ; then
+      echo "Argument musi byc nieparzysty!"
+    else
+      let PW=$1/2
+      let PWPLUS=PW+1
+      for (( y=$PWPLUS; $y>=1; y-- )) ; do
+        for (( LSP=$y; $LSP>=1; LSP-- )) ; do
+          echo -n " "
+        done
+        for (( LGW=1; LGW<=($PWPLUS-$y)*2+1; LGW++ )) ; do
+	  echo -n "*"
+	done
+        echo ""	   
+      done
+      for (( LSP=$PWPLUS; LSP>=1; LSP-- )) ; do
+        echo -n " "
+      done
+      echo "*"
+    fi  
+  fi
+fi
+
+SKRYPT #6.1
+# Napisz skrypt o nazwie skrypt, ktory zamienia nazwy miesiecy w jezyku polskim
+# na ich nazwy w jezyku angielskim, jednoczesnie piszac je w odwrotnej
+# kolejnosci. Nazwy te podawane sa w postaci argumentow wywolania tego skryptu.
+# Przyklad:
+# wywolanie:
+# ./skrypt marzec maj luty czerwiec
+# powoduje wyswietlenie jako efekt dzialania tego skryptu:
+# June February May March
+# Liczba argumentow wywolania tego skryptu moze byc dowolna (ale rozna od 
+# zera). Nalezy wykrywac i sygnalizowac sytuacje, w ktorej nie podano zadnego
+# argumentu lub argumenty sa niepoprawne.
+if [ $# -eq 0 ] ; then
+  echo "Program wymaga podania nazw miesiecy w jezyku polskim."
+else
+ LICZNIK=$#
+ EFEKT=""
+ for (( i=1; $i<=$LICZNIK; i++ )); do
+ case $1 in 
+  sty*) MIESIAC=January;;
+  lut*) MIESIAC=February;;
+  mar*) MIESIAC=March;;
+  kwi*) MIESIAC=April;;
+  maj)  MIESIAC=May;;
+  cze*) MIESIAC=June;;
+  lip*) MIESIAC=July;;
+  sie*) MIESIAC=August;;
+  wrz*) MIESIAC=September;;
+  paz*) MIESIAC=October;;
+  lis*) MIESIAC=November;;
+  gru*) MIESIAC=December;;
+  *) echo "Niepoprawna nazwa miesiaca: $1";;
+ esac
+ EFEKT="$MIESIAC $EFEKT"
+ shift
+# echo $MIESIAC 
+ done
+ echo $EFEKT
+fi
+
+SKRYPT #7.1
+# Napisz skrypt, ktory sprawdza wszystkie pliki z rozszerzeniem .log 
+# znajdujace sie w biezacym katalogu, pod katem zawierania przez nie słowa fail
+# Efektem dzialania tego skryptu jest plik z wygenerowanym raportem.
+# Raport ten zawiera wynik powyzszego sprawdzenia: liczbe wszystkich plikow
+# z rozszerzeniem .log , oraz liczbe plikow zawierajacych w swej tresci
+# przynajmniej jedno slowo fail  Nazwa pliku raportu jest podawana jako argument
+# wywolania tego skryptu. Nalezy wykrywac i sygnalizowac sytuacje, w ktorej
+# nie podano zadnego argumentu (lub za duzo argumentow).
+# Przykladowy raport:
+# Biezacy katalog zawiera 20 plikow z rozszerzeniem .log
+# w tym: 12 zawiera przynajmniej jedno slowo fail
+# W skrypcie nie mozna wykorzystywac nastepujacych polecen:
+# grep  egrep find awk vi
+#
+if [ $# -ne 1 ] ; then
+  echo "Skrypt powinien być wywolany z jednym argumentem: nazwa pliku raportu."
+else
+ RAPORT=$1
+ LPLOG=0
+ LPFAIL=0
+ for PLIK in *.log ; do
+   if [ -f $PLIK ] ; then
+     let LPLOG++
+     LWFAIL=0
+     while read LINIA ; do
+       for SLOWO in $LINIA ; do
+         if [ $SLOWO == "fail" ]; then
+         let LWFAIL++
+         fi
+       done
+     done < "$PLIK"
+     if [ $LWFAIL -gt 0 ] ; then
+       let LPFAIL++
+     fi
+   fi
+ done
+ echo "Biezacy katalog zawiera $LPLOG plikow z rozszerzeniem .log" >> $RAPORT
+ echo "w tym: $LPFAIL zawiera przynajmniej jedno slowo fail" >> $RAPORT
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

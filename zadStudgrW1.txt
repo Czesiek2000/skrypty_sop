@@ -1,0 +1,1184 @@
+s20670
+zadania 1
+Napisz skrypt, który wypisze od 1 do n wyników silni w formacie:
+1! = 1
+2! = 2
+3! = 6
+liczba n ma zostać podana przez użytkownika.
+
+zadania 2
+Napisz skrypt, który policzy który użytkownik jest najwięcej razy zalogowany.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20774
+zadania 1
+Napisz skrypt, który sprawdzi aktualnie zalogowanych użytkowników, posortuje według adresu komputera użytkownika i zapisze do pliku podanego przez użytkownika.
+
+zadania 2
+Napisz skrypt, który zsumuje wszystkie liczby z pliku podanego w argumencie.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20193
+zadania 1
+Napisz skrypt, który z aktualnego katalogu pobierze wszystkie pliki .java i sprawdzi czy jest w pliku klasa zgodna z nazwą pliku.
+zadania 2
+Napisz skrypt, który policzy w każdym pliku w podanym katalogu ile jest w nim dat w formacie 2/05/2019 a ile w formacie 2 maj 2019.
+zadania 3
+Napisz skrypt, który pobierze jako argument plik z datami w formacie:
+1/4/1999
+3/5/2020
+i przepisze dane do nowego pliku z tymi samymi datami ale w formacie:
+D1 M4 R1999
+D3 M4 R2020
+
+
+________________________
+s20769
+zadania 1
+Napisz skrypt, który policzy ile w podanym pliku jest słów (słowo czyli zbiór dowolnych znaków nie białych i niebędących liczbą), a ile liczb.
+
+zadania 2
+Napisz skrypt, który będzie wypisywał potęgi liczby n od x do y gdzie n, x i y jest podane przez użytkownika. Wynik skryptu ma wyglądać następująco:
+2^3=8
+2^4=16
+
+zadania 3
+Napisz skrypt, który sprawdzi w pliku podanym w argumencie czy są tam wspomniani aktualnie zalogowani użytkownicy i ile razy występuje ich login w pliku.
+
+________________________
+s20677
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików większych niż 4000 bajtów.
+zadania 2
+W podanym przez użytkownika katalogu znajdują się pliki txt z listą imion i nazwisk, przepisz do nowego pliku, podanego przez użytkownika, wszystkich których imiona kończą się na a i mają nazwiska 2 członowe, np:
+Olga Kowalska-Niekowalska
+
+zadania 3
+Napisz skrypt, który znajdzie najmniejszą i największą wartość z wszystkich plików podanych w argumencie. Sprawdzić czy wartości są liczbami, jak nie to pominąć.
+
+________________________
+s20666
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików, z podanego katalogu, które mają w nazwie przynajmniej 3 litery “a”. Litery nie muszą być jedna po drugiej, może być zarówno wielka “A” jak i mała “a”.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <head> </head>
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+k a j
+a d
+a l
+i n n i w
+i zapisze do pliku podanego przez użytkownika palindromy z tych danych, czyli na wyjściu powinniśmy dostać plik z danymi:
+kajak
+ada
+ala
+inniwinni
+
+
+________________________
+s20631
+zadania 1
+Napisz skrypt, który wypisze ile razy w plikach .txt w aktualnym katalogu, pojawia się słowo podane przez użytkownika.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <body> </body>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s21823
+zadania 1
+Napisz skrypt, który sprawdzi ile razy w podanym pliku .sh pojawia się linijka składająca się z samego komentarza, uwaga nie liczyć “#!/bin/bash”.
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w odwrotnej kolejności z tą różnicą że słowa w linijkach będą ułożone alfabetycznie.
+zadania 3
+Napisz skrypt, które pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s19362
+zadania 1
+Napisz skrypt, który będzie wypisywał potęgi liczby n od 1 do m gdzie n i m jest podane przez użytkownika. Wynik skryptu dla n=2 i m=4 ma wyglądać następująco:
+2^1=2
+2^2=4
+2^3=8
+2^4=16
+
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w kolejności alfabetycznej z tą różnicą że słowa będą w odwrotnej kolejności.
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+a-d-a-m
+o-l-a
+t-o-m
+i zapisze do pliku podanego przez użytkownika litery od tyłu zamieniając - na _, czyli na wyjściu powinniśmy dostać plik z danymi:
+m_a_d_a
+a_l_o
+m_o_t
+
+
+________________________
+s21339
+zadania 1
+Napisz skrypt, który pobierze listę katalogów do utworzenia, utworzy te katalogi wraz z katalogami nadrzędnymi, i w każdym pliku otworzy plik txt w którym będzie zapisana pełna ścieżkę jego katalogu.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i przepisz do nowego pliku samą zawartość części <body> </body>
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najwięcej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20679
+zadania 1
+Napisz skrypt, który sprawdzi, w których plikach .txt w podanym katalogu znajduję się jakiś adres email.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i przepisze do nowego pliku samą zawartość części <head> </head>
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najmniej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczyt
+
+________________________
+s20692
+zadania 1
+Napisz skrypt, który wypisze środkowe linijki plików .txt z podanego katalogu.
+zadania 2
+Napisz skrypt, który wypisze od n do m wyników silni w formacie:
+3! = 6
+4! = 24
+5! = 120
+liczby n i m mają zostać podane przez użytkownika
+
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20537
+zadania 1
+Napisz skrypt, który w podanym katalogu wybierze pliki .txt i policzy ile razy pojawia się jakiś cytat, czyli tekst będący pomiędzy znakami “ “.
+zadania 2
+Napisz skrypt, który policzy który użytkownik jest najwięcej razy zalogowany.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20604
+zadania 1
+Napisz skrypt, który pobierze podany przez użytkownika plik .txt, który posiada operacje matematyczne na przykład takie jak:
+1+1*2
+10/2-1
+I poda ich prawidłowy wynik.
+
+zadania 2
+Napisz skrypt, który zsumuje wszystkie liczby z pliku podanego w argumencie.
+zadania 3
+Napisz skrypt, który pobierze jako argument plik z datami w formacie:
+1/4/1999
+3/5/2020
+i przepisze dane do nowego pliku z tymi samymi datami ale w formacie:
+D1 M4 R1999
+D3 M4 R2020
+
+
+________________________
+s20710
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .txt, słowa zaczynające się na “a”, mające w środku “b” i kończące na “c”. Następnie posortuj te słowa. Pamiętaj, że słowo może się zaczynać zarówno z wielkiej litery jak i małej.
+zadania 2
+Napisz skrypt, który policzy w każdym pliku w podanym katalogu ile jest w nim dat w formacie 2/05/2019 a ile w formacie 2 maj 2019.
+zadania 3
+Napisz skrypt, który sprawdzi w pliku podanym w argumencie czy są tam wspomniani aktualnie zalogowani użytkownicy i ile razy występuje ich login w pliku.
+
+________________________
+s21368
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .html, linijki zaczynające się na “<a”, mające w środku adres strony internetowej i kończące na “</a>”. 
+zadania 2
+Napisz skrypt, który będzie wypisywał potęgi liczby n od x do y gdzie n, x i y jest podane przez użytkownika. Wynik skryptu ma wyglądać następująco:
+2^3=8
+2^4=16
+
+zadania 3
+Napisz skrypt, który znajdzie najmniejszą i największą wartość z wszystkich plików podanych w argumencie. Sprawdzić czy wartości są liczbami, jak nie to pominąć.
+
+________________________
+s21330
+zadania 1
+Napisz skrypt, który wypisze od 1 do n wyników silni w formacie:
+1! = 1
+2! = 2
+3! = 6
+liczba n ma zostać podana przez użytkownika.
+
+zadania 2
+W podanym przez użytkownika katalogu znajdują się pliki txt z listą imion i nazwisk, przepisz do nowego pliku, podanego przez użytkownika, wszystkich których imiona kończą się na a i mają nazwiska 2 członowe, np:
+Olga Kowalska-Niekowalska
+
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+k a j
+a d
+a l
+i n n i w
+i zapisze do pliku podanego przez użytkownika palindromy z tych danych, czyli na wyjściu powinniśmy dostać plik z danymi:
+kajak
+ada
+ala
+inniwinni
+
+
+________________________
+s21347
+zadania 1
+Napisz skrypt, który sprawdzi aktualnie zalogowanych użytkowników, posortuje według adresu komputera użytkownika i zapisze do pliku podanego przez użytkownika.
+
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <head> </head>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s21348
+zadania 1
+Napisz skrypt, który z aktualnego katalogu pobierze wszystkie pliki .java i sprawdzi czy jest w pliku klasa zgodna z nazwą pliku.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <body> </body>
+zadania 3
+Napisz skrypt, które pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s21386
+zadania 1
+Napisz skrypt, który policzy ile w podanym pliku jest słów (słowo czyli zbiór dowolnych znaków nie białych i niebędących liczbą), a ile liczb.
+
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w odwrotnej kolejności z tą różnicą że słowa w linijkach będą ułożone alfabetycznie.
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+a-d-a-m
+o-l-a
+t-o-m
+i zapisze do pliku podanego przez użytkownika litery od tyłu zamieniając - na _, czyli na wyjściu powinniśmy dostać plik z danymi:
+m_a_d_a
+a_l_o
+m_o_t
+
+
+________________________
+s21351
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików większych niż 4000 bajtów.
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w kolejności alfabetycznej z tą różnicą że słowa będą w odwrotnej kolejności.
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najwięcej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s16706
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików, z podanego katalogu, które mają w nazwie przynajmniej 3 litery “a”. Litery nie muszą być jedna po drugiej, może być zarówno wielka “A” jak i mała “a”.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i przepisz do nowego pliku samą zawartość części <body> </body>
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najmniej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczyt
+
+________________________
+s21390
+zadania 1
+Napisz skrypt, który wypisze ile razy w plikach .txt w aktualnym katalogu, pojawia się słowo podane przez użytkownika.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i przepisze do nowego pliku samą zawartość części <head> </head>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s21382
+zadania 1
+Napisz skrypt, który sprawdzi ile razy w podanym pliku .sh pojawia się linijka składająca się z samego komentarza, uwaga nie liczyć “#!/bin/bash”.
+zadania 2
+Napisz skrypt, który wypisze od n do m wyników silni w formacie:
+3! = 6
+4! = 24
+5! = 120
+liczby n i m mają zostać podane przez użytkownika
+
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s16849
+zadania 1
+Napisz skrypt, który będzie wypisywał potęgi liczby n od 1 do m gdzie n i m jest podane przez użytkownika. Wynik skryptu dla n=2 i m=4 ma wyglądać następująco:
+2^1=2
+2^2=4
+2^3=8
+2^4=16
+
+zadania 2
+Napisz skrypt, który policzy który użytkownik jest najwięcej razy zalogowany.
+zadania 3
+Napisz skrypt, który pobierze jako argument plik z datami w formacie:
+1/4/1999
+3/5/2020
+i przepisze dane do nowego pliku z tymi samymi datami ale w formacie:
+D1 M4 R1999
+D3 M4 R2020
+
+
+________________________
+s21344
+zadania 1
+Napisz skrypt, który pobierze listę katalogów do utworzenia, utworzy te katalogi wraz z katalogami nadrzędnymi, i w każdym pliku otworzy plik txt w którym będzie zapisana pełna ścieżkę jego katalogu.
+zadania 2
+Napisz skrypt, który zsumuje wszystkie liczby z pliku podanego w argumencie.
+zadania 3
+Napisz skrypt, który sprawdzi w pliku podanym w argumencie czy są tam wspomniani aktualnie zalogowani użytkownicy i ile razy występuje ich login w pliku.
+
+________________________
+s21371
+zadania 1
+Napisz skrypt, który sprawdzi, w których plikach .txt w podanym katalogu znajduję się jakiś adres email.
+zadania 2
+Napisz skrypt, który policzy w każdym pliku w podanym katalogu ile jest w nim dat w formacie 2/05/2019 a ile w formacie 2 maj 2019.
+zadania 3
+Napisz skrypt, który znajdzie najmniejszą i największą wartość z wszystkich plików podanych w argumencie. Sprawdzić czy wartości są liczbami, jak nie to pominąć.
+
+________________________
+s21374
+zadania 1
+Napisz skrypt, który wypisze środkowe linijki plików .txt z podanego katalogu.
+zadania 2
+Napisz skrypt, który będzie wypisywał potęgi liczby n od x do y gdzie n, x i y jest podane przez użytkownika. Wynik skryptu ma wyglądać następująco:
+2^3=8
+2^4=16
+
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+k a j
+a d
+a l
+i n n i w
+i zapisze do pliku podanego przez użytkownika palindromy z tych danych, czyli na wyjściu powinniśmy dostać plik z danymi:
+kajak
+ada
+ala
+inniwinni
+
+
+________________________
+s16574
+zadania 1
+Napisz skrypt, który w podanym katalogu wybierze pliki .txt i policzy ile razy pojawia się jakiś cytat, czyli tekst będący pomiędzy znakami “ “.
+zadania 2
+W podanym przez użytkownika katalogu znajdują się pliki txt z listą imion i nazwisk, przepisz do nowego pliku, podanego przez użytkownika, wszystkich których imiona kończą się na a i mają nazwiska 2 członowe, np:
+Olga Kowalska-Niekowalska
+
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20950
+zadania 1
+Napisz skrypt, który pobierze podany przez użytkownika plik .txt, który posiada operacje matematyczne na przykład takie jak:
+1+1*2
+10/2-1
+I poda ich prawidłowy wynik.
+
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <head> </head>
+zadania 3
+Napisz skrypt, które pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20143
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .txt, słowa zaczynające się na “a”, mające w środku “b” i kończące na “c”. Następnie posortuj te słowa. Pamiętaj, że słowo może się zaczynać zarówno z wielkiej litery jak i małej.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <body> </body>
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+a-d-a-m
+o-l-a
+t-o-m
+i zapisze do pliku podanego przez użytkownika litery od tyłu zamieniając - na _, czyli na wyjściu powinniśmy dostać plik z danymi:
+m_a_d_a
+a_l_o
+m_o_t
+
+
+________________________
+s21516
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .html, linijki zaczynające się na “<a”, mające w środku adres strony internetowej i kończące na “</a>”. 
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w odwrotnej kolejności z tą różnicą że słowa w linijkach będą ułożone alfabetycznie.
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najwięcej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20325
+zadania 1
+Napisz skrypt, który wypisze od 1 do n wyników silni w formacie:
+1! = 1
+2! = 2
+3! = 6
+liczba n ma zostać podana przez użytkownika.
+
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w kolejności alfabetycznej z tą różnicą że słowa będą w odwrotnej kolejności.
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najmniej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczyt
+
+________________________
+s21430
+zadania 1
+Napisz skrypt, który sprawdzi aktualnie zalogowanych użytkowników, posortuje według adresu komputera użytkownika i zapisze do pliku podanego przez użytkownika.
+
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i przepisz do nowego pliku samą zawartość części <body> </body>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20197
+zadania 1
+Napisz skrypt, który z aktualnego katalogu pobierze wszystkie pliki .java i sprawdzi czy jest w pliku klasa zgodna z nazwą pliku.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i przepisze do nowego pliku samą zawartość części <head> </head>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s18821
+zadania 1
+Napisz skrypt, który policzy ile w podanym pliku jest słów (słowo czyli zbiór dowolnych znaków nie białych i niebędących liczbą), a ile liczb.
+
+zadania 2
+Napisz skrypt, który wypisze od n do m wyników silni w formacie:
+3! = 6
+4! = 24
+5! = 120
+liczby n i m mają zostać podane przez użytkownika
+
+zadania 3
+Napisz skrypt, który pobierze jako argument plik z datami w formacie:
+1/4/1999
+3/5/2020
+i przepisze dane do nowego pliku z tymi samymi datami ale w formacie:
+D1 M4 R1999
+D3 M4 R2020
+
+
+________________________
+s20128
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików większych niż 4000 bajtów.
+zadania 2
+Napisz skrypt, który policzy który użytkownik jest najwięcej razy zalogowany.
+zadania 3
+Napisz skrypt, który sprawdzi w pliku podanym w argumencie czy są tam wspomniani aktualnie zalogowani użytkownicy i ile razy występuje ich login w pliku.
+
+________________________
+s20419
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików, z podanego katalogu, które mają w nazwie przynajmniej 3 litery “a”. Litery nie muszą być jedna po drugiej, może być zarówno wielka “A” jak i mała “a”.
+zadania 2
+Napisz skrypt, który zsumuje wszystkie liczby z pliku podanego w argumencie.
+zadania 3
+Napisz skrypt, który znajdzie najmniejszą i największą wartość z wszystkich plików podanych w argumencie. Sprawdzić czy wartości są liczbami, jak nie to pominąć.
+
+________________________
+s21485
+zadania 1
+Napisz skrypt, który wypisze ile razy w plikach .txt w aktualnym katalogu, pojawia się słowo podane przez użytkownika.
+zadania 2
+Napisz skrypt, który policzy w każdym pliku w podanym katalogu ile jest w nim dat w formacie 2/05/2019 a ile w formacie 2 maj 2019.
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+k a j
+a d
+a l
+i n n i w
+i zapisze do pliku podanego przez użytkownika palindromy z tych danych, czyli na wyjściu powinniśmy dostać plik z danymi:
+kajak
+ada
+ala
+inniwinni
+
+
+________________________
+s18993
+zadania 1
+Napisz skrypt, który sprawdzi ile razy w podanym pliku .sh pojawia się linijka składająca się z samego komentarza, uwaga nie liczyć “#!/bin/bash”.
+zadania 2
+Napisz skrypt, który będzie wypisywał potęgi liczby n od x do y gdzie n, x i y jest podane przez użytkownika. Wynik skryptu ma wyglądać następująco:
+2^3=8
+2^4=16
+
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s21483
+zadania 1
+Napisz skrypt, który będzie wypisywał potęgi liczby n od 1 do m gdzie n i m jest podane przez użytkownika. Wynik skryptu dla n=2 i m=4 ma wyglądać następująco:
+2^1=2
+2^2=4
+2^3=8
+2^4=16
+
+zadania 2
+W podanym przez użytkownika katalogu znajdują się pliki txt z listą imion i nazwisk, przepisz do nowego pliku, podanego przez użytkownika, wszystkich których imiona kończą się na a i mają nazwiska 2 członowe, np:
+Olga Kowalska-Niekowalska
+
+zadania 3
+Napisz skrypt, które pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20421
+zadania 1
+Napisz skrypt, który pobierze listę katalogów do utworzenia, utworzy te katalogi wraz z katalogami nadrzędnymi, i w każdym pliku otworzy plik txt w którym będzie zapisana pełna ścieżkę jego katalogu.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <head> </head>
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+a-d-a-m
+o-l-a
+t-o-m
+i zapisze do pliku podanego przez użytkownika litery od tyłu zamieniając - na _, czyli na wyjściu powinniśmy dostać plik z danymi:
+m_a_d_a
+a_l_o
+m_o_t
+
+
+________________________
+s20713
+zadania 1
+Napisz skrypt, który sprawdzi, w których plikach .txt w podanym katalogu znajduję się jakiś adres email.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <body> </body>
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najwięcej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s21464
+zadania 1
+Napisz skrypt, który wypisze środkowe linijki plików .txt z podanego katalogu.
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w odwrotnej kolejności z tą różnicą że słowa w linijkach będą ułożone alfabetycznie.
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najmniej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczyt
+
+________________________
+s20266
+zadania 1
+Napisz skrypt, który w podanym katalogu wybierze pliki .txt i policzy ile razy pojawia się jakiś cytat, czyli tekst będący pomiędzy znakami “ “.
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w kolejności alfabetycznej z tą różnicą że słowa będą w odwrotnej kolejności.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20423
+zadania 1
+Napisz skrypt, który pobierze podany przez użytkownika plik .txt, który posiada operacje matematyczne na przykład takie jak:
+1+1*2
+10/2-1
+I poda ich prawidłowy wynik.
+
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i przepisz do nowego pliku samą zawartość części <body> </body>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s19962
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .txt, słowa zaczynające się na “a”, mające w środku “b” i kończące na “c”. Następnie posortuj te słowa. Pamiętaj, że słowo może się zaczynać zarówno z wielkiej litery jak i małej.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i przepisze do nowego pliku samą zawartość części <head> </head>
+zadania 3
+Napisz skrypt, który pobierze jako argument plik z datami w formacie:
+1/4/1999
+3/5/2020
+i przepisze dane do nowego pliku z tymi samymi datami ale w formacie:
+D1 M4 R1999
+D3 M4 R2020
+
+
+________________________
+s18361
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .html, linijki zaczynające się na “<a”, mające w środku adres strony internetowej i kończące na “</a>”. 
+zadania 2
+Napisz skrypt, który wypisze od n do m wyników silni w formacie:
+3! = 6
+4! = 24
+5! = 120
+liczby n i m mają zostać podane przez użytkownika
+
+zadania 3
+Napisz skrypt, który sprawdzi w pliku podanym w argumencie czy są tam wspomniani aktualnie zalogowani użytkownicy i ile razy występuje ich login w pliku.
+
+________________________
+s19765
+zadania 1
+Napisz skrypt, który wypisze od 1 do n wyników silni w formacie:
+1! = 1
+2! = 2
+3! = 6
+liczba n ma zostać podana przez użytkownika.
+
+zadania 2
+Napisz skrypt, który policzy który użytkownik jest najwięcej razy zalogowany.
+zadania 3
+Napisz skrypt, który znajdzie najmniejszą i największą wartość z wszystkich plików podanych w argumencie. Sprawdzić czy wartości są liczbami, jak nie to pominąć.
+
+________________________
+s18516
+zadania 1
+Napisz skrypt, który sprawdzi aktualnie zalogowanych użytkowników, posortuje według adresu komputera użytkownika i zapisze do pliku podanego przez użytkownika.
+
+zadania 2
+Napisz skrypt, który zsumuje wszystkie liczby z pliku podanego w argumencie.
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+k a j
+a d
+a l
+i n n i w
+i zapisze do pliku podanego przez użytkownika palindromy z tych danych, czyli na wyjściu powinniśmy dostać plik z danymi:
+kajak
+ada
+ala
+inniwinni
+
+
+________________________
+s18810
+zadania 1
+Napisz skrypt, który z aktualnego katalogu pobierze wszystkie pliki .java i sprawdzi czy jest w pliku klasa zgodna z nazwą pliku.
+zadania 2
+Napisz skrypt, który policzy w każdym pliku w podanym katalogu ile jest w nim dat w formacie 2/05/2019 a ile w formacie 2 maj 2019.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s16891
+zadania 1
+Napisz skrypt, który policzy ile w podanym pliku jest słów (słowo czyli zbiór dowolnych znaków nie białych i niebędących liczbą), a ile liczb.
+
+zadania 2
+Napisz skrypt, który będzie wypisywał potęgi liczby n od x do y gdzie n, x i y jest podane przez użytkownika. Wynik skryptu ma wyglądać następująco:
+2^3=8
+2^4=16
+
+zadania 3
+Napisz skrypt, które pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s18580
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików większych niż 4000 bajtów.
+zadania 2
+W podanym przez użytkownika katalogu znajdują się pliki txt z listą imion i nazwisk, przepisz do nowego pliku, podanego przez użytkownika, wszystkich których imiona kończą się na a i mają nazwiska 2 członowe, np:
+Olga Kowalska-Niekowalska
+
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+a-d-a-m
+o-l-a
+t-o-m
+i zapisze do pliku podanego przez użytkownika litery od tyłu zamieniając - na _, czyli na wyjściu powinniśmy dostać plik z danymi:
+m_a_d_a
+a_l_o
+m_o_t
+
+
+________________________
+S12964
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików, z podanego katalogu, które mają w nazwie przynajmniej 3 litery “a”. Litery nie muszą być jedna po drugiej, może być zarówno wielka “A” jak i mała “a”.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <head> </head>
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najwięcej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s15630
+zadania 1
+Napisz skrypt, który wypisze ile razy w plikach .txt w aktualnym katalogu, pojawia się słowo podane przez użytkownika.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <body> </body>
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najmniej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczyt
+
+________________________
+s17227
+zadania 1
+Napisz skrypt, który sprawdzi ile razy w podanym pliku .sh pojawia się linijka składająca się z samego komentarza, uwaga nie liczyć “#!/bin/bash”.
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w odwrotnej kolejności z tą różnicą że słowa w linijkach będą ułożone alfabetycznie.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s18348
+zadania 1
+Napisz skrypt, który będzie wypisywał potęgi liczby n od 1 do m gdzie n i m jest podane przez użytkownika. Wynik skryptu dla n=2 i m=4 ma wyglądać następująco:
+2^1=2
+2^2=4
+2^3=8
+2^4=16
+
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w kolejności alfabetycznej z tą różnicą że słowa będą w odwrotnej kolejności.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+S14247
+zadania 1
+Napisz skrypt, który pobierze listę katalogów do utworzenia, utworzy te katalogi wraz z katalogami nadrzędnymi, i w każdym pliku otworzy plik txt w którym będzie zapisana pełna ścieżkę jego katalogu.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i przepisz do nowego pliku samą zawartość części <body> </body>
+zadania 3
+Napisz skrypt, który pobierze jako argument plik z datami w formacie:
+1/4/1999
+3/5/2020
+i przepisze dane do nowego pliku z tymi samymi datami ale w formacie:
+D1 M4 R1999
+D3 M4 R2020
+
+
+________________________
+S13006
+zadania 1
+Napisz skrypt, który sprawdzi, w których plikach .txt w podanym katalogu znajduję się jakiś adres email.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i przepisze do nowego pliku samą zawartość części <head> </head>
+zadania 3
+Napisz skrypt, który sprawdzi w pliku podanym w argumencie czy są tam wspomniani aktualnie zalogowani użytkownicy i ile razy występuje ich login w pliku.
+
+________________________
+s15740
+zadania 1
+Napisz skrypt, który wypisze środkowe linijki plików .txt z podanego katalogu.
+zadania 2
+Napisz skrypt, który wypisze od n do m wyników silni w formacie:
+3! = 6
+4! = 24
+5! = 120
+liczby n i m mają zostać podane przez użytkownika
+
+zadania 3
+Napisz skrypt, który znajdzie najmniejszą i największą wartość z wszystkich plików podanych w argumencie. Sprawdzić czy wartości są liczbami, jak nie to pominąć.
+
+________________________
+s21423
+zadania 1
+Napisz skrypt, który w podanym katalogu wybierze pliki .txt i policzy ile razy pojawia się jakiś cytat, czyli tekst będący pomiędzy znakami “ “.
+zadania 2
+Napisz skrypt, który policzy który użytkownik jest najwięcej razy zalogowany.
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+k a j
+a d
+a l
+i n n i w
+i zapisze do pliku podanego przez użytkownika palindromy z tych danych, czyli na wyjściu powinniśmy dostać plik z danymi:
+kajak
+ada
+ala
+inniwinni
+
+
+________________________
+s18700
+zadania 1
+Napisz skrypt, który pobierze podany przez użytkownika plik .txt, który posiada operacje matematyczne na przykład takie jak:
+1+1*2
+10/2-1
+I poda ich prawidłowy wynik.
+
+zadania 2
+Napisz skrypt, który zsumuje wszystkie liczby z pliku podanego w argumencie.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20787
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .txt, słowa zaczynające się na “a”, mające w środku “b” i kończące na “c”. Następnie posortuj te słowa. Pamiętaj, że słowo może się zaczynać zarówno z wielkiej litery jak i małej.
+zadania 2
+Napisz skrypt, który policzy w każdym pliku w podanym katalogu ile jest w nim dat w formacie 2/05/2019 a ile w formacie 2 maj 2019.
+zadania 3
+Napisz skrypt, które pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20802
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .html, linijki zaczynające się na “<a”, mające w środku adres strony internetowej i kończące na “</a>”. 
+zadania 2
+Napisz skrypt, który będzie wypisywał potęgi liczby n od x do y gdzie n, x i y jest podane przez użytkownika. Wynik skryptu ma wyglądać następująco:
+2^3=8
+2^4=16
+
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+a-d-a-m
+o-l-a
+t-o-m
+i zapisze do pliku podanego przez użytkownika litery od tyłu zamieniając - na _, czyli na wyjściu powinniśmy dostać plik z danymi:
+m_a_d_a
+a_l_o
+m_o_t
+
+
+________________________
+s20800
+zadania 1
+Napisz skrypt, który wypisze od 1 do n wyników silni w formacie:
+1! = 1
+2! = 2
+3! = 6
+liczba n ma zostać podana przez użytkownika.
+
+zadania 2
+W podanym przez użytkownika katalogu znajdują się pliki txt z listą imion i nazwisk, przepisz do nowego pliku, podanego przez użytkownika, wszystkich których imiona kończą się na a i mają nazwiska 2 członowe, np:
+Olga Kowalska-Niekowalska
+
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najwięcej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20798
+zadania 1
+Napisz skrypt, który sprawdzi aktualnie zalogowanych użytkowników, posortuje według adresu komputera użytkownika i zapisze do pliku podanego przez użytkownika.
+
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <head> </head>
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najmniej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczyt
+
+________________________
+s20821
+zadania 1
+Napisz skrypt, który z aktualnego katalogu pobierze wszystkie pliki .java i sprawdzi czy jest w pliku klasa zgodna z nazwą pliku.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <body> </body>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20773
+zadania 1
+Napisz skrypt, który policzy ile w podanym pliku jest słów (słowo czyli zbiór dowolnych znaków nie białych i niebędących liczbą), a ile liczb.
+
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w odwrotnej kolejności z tą różnicą że słowa w linijkach będą ułożone alfabetycznie.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s19430
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików większych niż 4000 bajtów.
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w kolejności alfabetycznej z tą różnicą że słowa będą w odwrotnej kolejności.
+zadania 3
+Napisz skrypt, który pobierze jako argument plik z datami w formacie:
+1/4/1999
+3/5/2020
+i przepisze dane do nowego pliku z tymi samymi datami ale w formacie:
+D1 M4 R1999
+D3 M4 R2020
+
+
+________________________
+s20767
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików, z podanego katalogu, które mają w nazwie przynajmniej 3 litery “a”. Litery nie muszą być jedna po drugiej, może być zarówno wielka “A” jak i mała “a”.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i przepisz do nowego pliku samą zawartość części <body> </body>
+zadania 3
+Napisz skrypt, który sprawdzi w pliku podanym w argumencie czy są tam wspomniani aktualnie zalogowani użytkownicy i ile razy występuje ich login w pliku.
+
+________________________
+s20771
+zadania 1
+Napisz skrypt, który wypisze ile razy w plikach .txt w aktualnym katalogu, pojawia się słowo podane przez użytkownika.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i przepisze do nowego pliku samą zawartość części <head> </head>
+zadania 3
+Napisz skrypt, który znajdzie najmniejszą i największą wartość z wszystkich plików podanych w argumencie. Sprawdzić czy wartości są liczbami, jak nie to pominąć.
+
+________________________
+s20809
+zadania 1
+Napisz skrypt, który sprawdzi ile razy w podanym pliku .sh pojawia się linijka składająca się z samego komentarza, uwaga nie liczyć “#!/bin/bash”.
+zadania 2
+Napisz skrypt, który wypisze od n do m wyników silni w formacie:
+3! = 6
+4! = 24
+5! = 120
+liczby n i m mają zostać podane przez użytkownika
+
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+k a j
+a d
+a l
+i n n i w
+i zapisze do pliku podanego przez użytkownika palindromy z tych danych, czyli na wyjściu powinniśmy dostać plik z danymi:
+kajak
+ada
+ala
+inniwinni
+
+
+________________________
+s20823
+zadania 1
+Napisz skrypt, który będzie wypisywał potęgi liczby n od 1 do m gdzie n i m jest podane przez użytkownika. Wynik skryptu dla n=2 i m=4 ma wyglądać następująco:
+2^1=2
+2^2=4
+2^3=8
+2^4=16
+
+zadania 2
+Napisz skrypt, który policzy który użytkownik jest najwięcej razy zalogowany.
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20806
+zadania 1
+Napisz skrypt, który pobierze listę katalogów do utworzenia, utworzy te katalogi wraz z katalogami nadrzędnymi, i w każdym pliku otworzy plik txt w którym będzie zapisana pełna ścieżkę jego katalogu.
+zadania 2
+Napisz skrypt, który zsumuje wszystkie liczby z pliku podanego w argumencie.
+zadania 3
+Napisz skrypt, które pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20778
+zadania 1
+Napisz skrypt, który sprawdzi, w których plikach .txt w podanym katalogu znajduję się jakiś adres email.
+zadania 2
+Napisz skrypt, który policzy w każdym pliku w podanym katalogu ile jest w nim dat w formacie 2/05/2019 a ile w formacie 2 maj 2019.
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+a-d-a-m
+o-l-a
+t-o-m
+i zapisze do pliku podanego przez użytkownika litery od tyłu zamieniając - na _, czyli na wyjściu powinniśmy dostać plik z danymi:
+m_a_d_a
+a_l_o
+m_o_t
+
+
+________________________
+s20936
+zadania 1
+Napisz skrypt, który wypisze środkowe linijki plików .txt z podanego katalogu.
+zadania 2
+Napisz skrypt, który będzie wypisywał potęgi liczby n od x do y gdzie n, x i y jest podane przez użytkownika. Wynik skryptu ma wyglądać następująco:
+2^3=8
+2^4=16
+
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najwięcej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20897
+zadania 1
+Napisz skrypt, który w podanym katalogu wybierze pliki .txt i policzy ile razy pojawia się jakiś cytat, czyli tekst będący pomiędzy znakami “ “.
+zadania 2
+W podanym przez użytkownika katalogu znajdują się pliki txt z listą imion i nazwisk, przepisz do nowego pliku, podanego przez użytkownika, wszystkich których imiona kończą się na a i mają nazwiska 2 członowe, np:
+Olga Kowalska-Niekowalska
+
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najmniej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczyt
+
+________________________
+s20911
+zadania 1
+Napisz skrypt, który pobierze podany przez użytkownika plik .txt, który posiada operacje matematyczne na przykład takie jak:
+1+1*2
+10/2-1
+I poda ich prawidłowy wynik.
+
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <head> </head>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20883
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .txt, słowa zaczynające się na “a”, mające w środku “b” i kończące na “c”. Następnie posortuj te słowa. Pamiętaj, że słowo może się zaczynać zarówno z wielkiej litery jak i małej.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <body> </body>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20875
+zadania 1
+Napisz skrypt, który znajdzie w podanym katalogu, we wszystkich plikach .html, linijki zaczynające się na “<a”, mające w środku adres strony internetowej i kończące na “</a>”. 
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w odwrotnej kolejności z tą różnicą że słowa w linijkach będą ułożone alfabetycznie.
+zadania 3
+Napisz skrypt, który pobierze jako argument plik z datami w formacie:
+1/4/1999
+3/5/2020
+i przepisze dane do nowego pliku z tymi samymi datami ale w formacie:
+D1 M4 R1999
+D3 M4 R2020
+
+
+________________________
+s20678
+zadania 1
+Napisz skrypt, który wypisze od 1 do n wyników silni w formacie:
+1! = 1
+2! = 2
+3! = 6
+liczba n ma zostać podana przez użytkownika.
+
+zadania 2
+Napisz skrypt który pobierze od użytkownika plik .txt i przepisze do nowego pliku, podanego przez użytkownika, wszystkie linijki w kolejności alfabetycznej z tą różnicą że słowa będą w odwrotnej kolejności.
+zadania 3
+Napisz skrypt, który sprawdzi w pliku podanym w argumencie czy są tam wspomniani aktualnie zalogowani użytkownicy i ile razy występuje ich login w pliku.
+
+________________________
+s18450
+zadania 1
+Napisz skrypt, który sprawdzi aktualnie zalogowanych użytkowników, posortuje według adresu komputera użytkownika i zapisze do pliku podanego przez użytkownika.
+
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i przepisz do nowego pliku samą zawartość części <body> </body>
+zadania 3
+Napisz skrypt, który znajdzie najmniejszą i największą wartość z wszystkich plików podanych w argumencie. Sprawdzić czy wartości są liczbami, jak nie to pominąć.
+
+________________________
+s20776
+zadania 1
+Napisz skrypt, który z aktualnego katalogu pobierze wszystkie pliki .java i sprawdzi czy jest w pliku klasa zgodna z nazwą pliku.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i przepisze do nowego pliku samą zawartość części <head> </head>
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+k a j
+a d
+a l
+i n n i w
+i zapisze do pliku podanego przez użytkownika palindromy z tych danych, czyli na wyjściu powinniśmy dostać plik z danymi:
+kajak
+ada
+ala
+inniwinni
+
+
+________________________
+s20791
+zadania 1
+Napisz skrypt, który policzy ile w podanym pliku jest słów (słowo czyli zbiór dowolnych znaków nie białych i niebędących liczbą), a ile liczb.
+
+zadania 2
+Napisz skrypt, który wypisze od n do m wyników silni w formacie:
+3! = 6
+4! = 24
+5! = 120
+liczby n i m mają zostać podane przez użytkownika
+
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20783
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików większych niż 4000 bajtów.
+zadania 2
+Napisz skrypt, który policzy który użytkownik jest najwięcej razy zalogowany.
+zadania 3
+Napisz skrypt, które pobierze jako argumenty ileś plików, i wypisze linijki od n do m pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20737
+zadania 1
+Napisz skrypt, który wyświetli zawartość plików, z podanego katalogu, które mają w nazwie przynajmniej 3 litery “a”. Litery nie muszą być jedna po drugiej, może być zarówno wielka “A” jak i mała “a”.
+zadania 2
+Napisz skrypt, który zsumuje wszystkie liczby z pliku podanego w argumencie.
+zadania 3
+Napisz skrypt, który przyjmie plik z danymi w formacie:
+a-d-a-m
+o-l-a
+t-o-m
+i zapisze do pliku podanego przez użytkownika litery od tyłu zamieniając - na _, czyli na wyjściu powinniśmy dostać plik z danymi:
+m_a_d_a
+a_l_o
+m_o_t
+
+
+________________________
+s20738
+zadania 1
+Napisz skrypt, który wypisze ile razy w plikach .txt w aktualnym katalogu, pojawia się słowo podane przez użytkownika.
+zadania 2
+Napisz skrypt, który policzy w każdym pliku w podanym katalogu ile jest w nim dat w formacie 2/05/2019 a ile w formacie 2 maj 2019.
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najwięcej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20819
+zadania 1
+Napisz skrypt, który sprawdzi ile razy w podanym pliku .sh pojawia się linijka składająca się z samego komentarza, uwaga nie liczyć “#!/bin/bash”.
+zadania 2
+Napisz skrypt, który będzie wypisywał potęgi liczby n od x do y gdzie n, x i y jest podane przez użytkownika. Wynik skryptu ma wyglądać następująco:
+2^3=8
+2^4=16
+
+zadania 3
+Napisz skrypt, który znajdzie plik txt, w podanym katalogu, mający najmniej linijek tekstu i wypisze środkową linijkę z tego pliku. Sprawdzić czy plik jest do odczyt
+
+________________________
+s20739
+zadania 1
+Napisz skrypt, który będzie wypisywał potęgi liczby n od 1 do m gdzie n i m jest podane przez użytkownika. Wynik skryptu dla n=2 i m=4 ma wyglądać następująco:
+2^1=2
+2^2=4
+2^3=8
+2^4=16
+
+zadania 2
+W podanym przez użytkownika katalogu znajdują się pliki txt z listą imion i nazwisk, przepisz do nowego pliku, podanego przez użytkownika, wszystkich których imiona kończą się na a i mają nazwiska 2 członowe, np:
+Olga Kowalska-Niekowalska
+
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z najmniejszą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20424
+zadania 1
+Napisz skrypt, który pobierze listę katalogów do utworzenia, utworzy te katalogi wraz z katalogami nadrzędnymi, i w każdym pliku otworzy plik txt w którym będzie zapisana pełna ścieżkę jego katalogu.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <head> </head>
+zadania 3
+Napisz skrypt, który pobierze jako argumenty ileś plików, i wypisze środkową linijkę pliku z największą ilością linii. Sprawdzić czy plik jest do odczytu.
+
+________________________
+s20826
+zadania 1
+Napisz skrypt, który sprawdzi, w których plikach .txt w podanym katalogu znajduję się jakiś adres email.
+zadania 2
+W katalogu podanym przez użytkownika wybierz pliki .html i  i poda dla każdego ile linijek zawiera część <body> </body>
+zadania 3
+Napisz skrypt, który pobierze jako argument plik z datami w formacie:
+1/4/1999
+3/5/2020
+i przepisze dane do nowego pliku z tymi samymi datami ale w formacie:
+D1 M4 R1999
+D3 M4 R2020
+
+
+________________________

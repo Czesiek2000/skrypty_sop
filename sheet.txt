@@ -1,0 +1,532 @@
+#!/bin/bash
+
+
+for i in `ls -la | grep ".sh$"`
+do
+	cat $i 2>/dev/null >> sheet.txt
+ 	#echo "====================="
+done 
+#!/bin/bash
+# echo -n "Podaj A "
+# read A
+# echo "podales $A"
+# if [ "$A" -eq "0" ]; then
+#     echo "Nie ma rownania kwadratowego"
+#     exit 0
+# else 
+#     echo -n "Podaj B "
+#     read B
+#     echo "podales $B"
+#     echo -n "Podaj C "
+#     read C
+#     echo "podales $C"
+
+#     DELTA=$(( ($B)*($B)-4*($A)*($C) ));
+
+#     echo "Delta ${DELTA}"
+# fi
+
+
+ls /dev | grep "^a" | wc
+#!/bin/bash
+
+re="[0-9]"
+
+if ! [[ "$@" =~ $re ]] ; then
+	echo "not a number"
+	exit 1
+else 
+	sum=$(($1 * $2 * $3))
+	echo $sum
+fi
+max=0
+max1=0
+min=0
+
+#if [ "$#" < 3 ] ; then 
+#	echo "argumenty mniejsze od 3 : $1, $2, $3"
+#else 
+#	echo "argumenty wieksze od 3"
+#	exit 1
+#fi
+ 
+if [ "$1" -gt "$2" ] & [ "$1" -gt "$3" ] ; then
+	echo "$1 najwieksza"
+	max="$1"
+elif [ "$2" -gt "$1" ] & [ "$2" -gt "$3" ] ; then
+	echo "$2 najwieksza"
+	max="$2"
+else 
+	echo "$3 najwieksza"
+	max="$3"
+fi
+
+
+if [ "$1" -lt $max ] ; then
+	echo "$1 minimalna"
+	min="$1"
+elif [ "$2" -lt $max ] ; then
+	echo "$2 minimalna"
+	min=$2
+else 
+	echo "$3 minimalna"
+	min=$3
+fi
+
+#if [ "$1" -gt $min ] & [ "$1" -lt $max ] ; then
+#	echo "$1 wieksza od $min i mniejsza od $max "
+#elif [ "$2" -gt $min ] & [ "$2" -lt $max ] ; then
+#	echo "$2 wieksze od $min i $2 mniejsze od $max "
+#else 
+#	echo "$3 wieksze od $min i $3 mniejsze od $max" 
+#fi
+  
+echo "$min min"
+echo "$max max"
+minMax=$((min + max))
+echo "suma min i max $min + $max = $minMax"
+
+OIFS="$IFS"
+IFS=" "
+licznik=0
+for i in $@ ; do
+	licznik++
+	echo $i
+done
+
+echo "licznik $licznik"
+#!/bin/bash 
+
+if [[ "$1" -eq "-s" ]] ; then
+        echo "$1 jest parametrem, if"
+	echo "$(( $2 + $3 ))"
+else
+        echo "cos innego"
+fi
+
+if [[ "$1" -eq "-i" ]] ; then
+	echo "$1 jest parametrem, if2"
+	echo "$(( $2 * $3 ))"
+else 
+	echo "inna operacja"
+fi
+exit 1
+
+# tabelka wyswietlajaca numery sop 06 zad 10
+for (( i=1; i <= 12; i++ ))
+do
+	for ((j=1; j <= 12; j++))
+	do
+		echo -n "$(( $i * $j )) "
+	done
+echo ""
+done
+
+if [[ "$1" -eq "-z" ]] ; then
+	echo "$1 jest parametrem"
+else 
+	echo "cos innego"
+fi
+#!/bin/bash
+
+# zadanie 11 
+cat sample.txt | tail -rn 1 | rev
+exit 0
+# zadanie 8 
+tr ":" "\n" <<< "$PATH"
+echo $PATH | tr ":" "\n"
+exit 0
+# sop3 zadanie 8
+cat sample.txt | grep "^s[0-9]" | wc -l
+
+exit 0
+# zadanie 2
+ls -la $1 | grep "b \| e \| s"
+
+exit 0
+# zadanie 1
+if [[ $# -eq 0 ]]
+ then
+	echo "Nie podano argumentu skryptu "
+	exit 1
+else
+	ls -la $1 | grep "^." | wc -l
+fi
+#!/bin/bash
+suma=0
+ilo=1
+if [[ "$1" -eq "-s" ]] ;
+then
+for i in `cat test.txt`
+do
+	string+=$i" "
+	suma=$(( suma + i ))	
+done
+fi
+
+if [[ "$1" -eq "-l" ]] ;
+then
+for i in `cat test.txt`
+do
+	ilo="$(( 3 * i ))"
+done
+fi
+echo $suma
+#echo $string
+echo $ilo
+tmp=2
+echo $(( tmp * tmp ))
+#exit 0
+
+# tabelka wyswietlajaca numerki sop 6 zadanie 10  
+for i in $(seq 1 12);
+do
+	for j in $(seq 1 12);
+	do
+		#echo "i $i"
+		#echo "j $j"
+		echo -n "$(( i * j )) "
+	done
+echo " "
+#done >> out.txt przekazanie danych z petli do pliku
+done
+
+
+exit 0
+
+shift 1
+echo $1
+echo $2
+echo $3
+exit 0
+for i in $@
+do 
+	shift "$i"
+done
+
+exit 0
+# zadanie 2
+read -p "Podaj nazwe argumentu " A
+echo $A
+echo "${!A}"
+exit 0
+# zadanie 1
+for(( i=$#; i>0; i-- ))
+do 
+	echo "${!i}"
+done
+
+
+
+
+
+#!/bin/bash
+
+WEJSCIE="$1"
+WYJSCIE="$2"
+
+echo "Plik wejsciowy ${WEJSCIE} plik wyjsciowy ${WYJSCIE}"
+
+#for (( i=0; i < 10; i++ )) ; 
+#do 
+	#echo "Hello World" > $2
+	#echo "$i" >> $2
+#done
+
+for i in `cat $WEJSCIE`
+do
+	#if [ $IFS -eq "\n"] ;
+	#then
+		echo "$i" >> $WYJSCIE
+	#fi
+done
+
+
+#echo "Plik nie  dziala " > "$WYJSCIE"
+#!/bin/bash
+# zadanie 3
+if [ -e $2 ] ;
+then
+	rm $2
+else
+	echo "$2 nie istnieje"
+fi
+for i in `cat $1`
+do
+	if [[ "$i" == [a-z]  ]] ;
+	then
+		#echo "wystepuja litery a-z + $i"
+		echo -n "$i " >> $2
+	else
+		#echo "nie wystepuja litery a-z + $i"
+		echo -n "$i " >>  $3
+	fi
+done
+
+
+#!/bin/bash
+
+ls -la | grep ".sh$"
+
+for i in `ls -la | grep ".sh$"`
+do
+	cat $i 2>/dev/null >> sheet.txt
+ 	#echo "====================="
+done 
+#!/bin/bash
+# echo -n "Podaj A "
+# read A
+# echo "podales $A"
+# if [ "$A" -eq "0" ]; then
+#     echo "Nie ma rownania kwadratowego"
+#     exit 0
+# else 
+#     echo -n "Podaj B "
+#     read B
+#     echo "podales $B"
+#     echo -n "Podaj C "
+#     read C
+#     echo "podales $C"
+
+#     DELTA=$(( ($B)*($B)-4*($A)*($C) ));
+
+#     echo "Delta ${DELTA}"
+# fi
+
+
+ls /dev | grep "^a" | wc#!/bin/bash
+
+re="[0-9]"
+
+if ! [[ "$@" =~ $re ]] ; then
+	echo "not a number"
+	exit 1
+else 
+	sum=$(($1 * $2 * $3))
+	echo $sum
+fi
+max=0
+max1=0
+min=0
+
+#if [ "$#" < 3 ] ; then 
+#	echo "argumenty mniejsze od 3 : $1, $2, $3"
+#else 
+#	echo "argumenty wieksze od 3"
+#	exit 1
+#fi
+ 
+if [ "$1" -gt "$2" ] & [ "$1" -gt "$3" ] ; then
+	echo "$1 najwieksza"
+	max="$1"
+elif [ "$2" -gt "$1" ] & [ "$2" -gt "$3" ] ; then
+	echo "$2 najwieksza"
+	max="$2"
+else 
+	echo "$3 najwieksza"
+	max="$3"
+fi
+
+
+if [ "$1" -lt $max ] ; then
+	echo "$1 minimalna"
+	min="$1"
+elif [ "$2" -lt $max ] ; then
+	echo "$2 minimalna"
+	min=$2
+else 
+	echo "$3 minimalna"
+	min=$3
+fi
+
+#if [ "$1" -gt $min ] & [ "$1" -lt $max ] ; then
+#	echo "$1 wieksza od $min i mniejsza od $max "
+#elif [ "$2" -gt $min ] & [ "$2" -lt $max ] ; then
+#	echo "$2 wieksze od $min i $2 mniejsze od $max "
+#else 
+#	echo "$3 wieksze od $min i $3 mniejsze od $max" 
+#fi
+  
+echo "$min min"
+echo "$max max"
+minMax=$((min + max))
+echo "suma min i max $min + $max = $minMax"
+
+OIFS="$IFS"
+IFS=" "
+licznik=0
+for i in $@ ; do
+	licznik++
+	echo $i
+done
+
+echo "licznik $licznik"
+#!/bin/bash 
+
+if [[ "$1" -eq "-s" ]] ; then
+        echo "$1 jest parametrem, if"
+	echo "$(( $2 + $3 ))"
+else
+        echo "cos innego"
+fi
+
+if [[ "$1" -eq "-i" ]] ; then
+	echo "$1 jest parametrem, if2"
+	echo "$(( $2 * $3 ))"
+else 
+	echo "inna operacja"
+fi
+exit 1
+
+# tabelka wyswietlajaca numery sop 06 zad 10
+for (( i=1; i <= 12; i++ ))
+do
+	for ((j=1; j <= 12; j++))
+	do
+		echo -n "$(( $i * $j )) "
+	done
+echo ""
+done
+
+if [[ "$1" -eq "-z" ]] ; then
+	echo "$1 jest parametrem"
+else 
+	echo "cos innego"
+fi
+#!/bin/bash
+
+# zadanie 11 
+cat sample.txt | tail -rn 1 | rev
+exit 0
+# zadanie 8 
+tr ":" "\n" <<< "$PATH"
+echo $PATH | tr ":" "\n"
+exit 0
+# sop3 zadanie 8
+cat sample.txt | grep "^s[0-9]" | wc -l
+
+exit 0
+# zadanie 2
+ls -la $1 | grep "b \| e \| s"
+
+exit 0
+# zadanie 1
+if [[ $# -eq 0 ]]
+ then
+	echo "Nie podano argumentu skryptu "
+	exit 1
+else
+	ls -la $1 | grep "^." | wc -l
+fi
+#!/bin/bash
+suma=0
+ilo=1
+if [[ "$1" -eq "-s" ]] ;
+then
+for i in `cat test.txt`
+do
+	string+=$i" "
+	suma=$(( suma + i ))	
+done
+fi
+
+if [[ "$1" -eq "-l" ]] ;
+then
+for i in `cat test.txt`
+do
+	ilo="$(( 3 * i ))"
+done
+fi
+echo $suma
+#echo $string
+echo $ilo
+tmp=2
+echo $(( tmp * tmp ))
+#exit 0
+
+# tabelka wyswietlajaca numerki sop 6 zadanie 10  
+for i in $(seq 1 12);
+do
+	for j in $(seq 1 12);
+	do
+		#echo "i $i"
+		#echo "j $j"
+		echo -n "$(( i * j )) "
+	done
+echo " "
+#done >> out.txt przekazanie danych z petli do pliku
+done
+
+
+exit 0
+
+shift 1
+echo $1
+echo $2
+echo $3
+exit 0
+for i in $@
+do 
+	shift "$i"
+done
+
+exit 0
+# zadanie 2
+read -p "Podaj nazwe argumentu " A
+echo $A
+echo "${!A}"
+exit 0
+# zadanie 1
+for(( i=$#; i>0; i-- ))
+do 
+	echo "${!i}"
+done
+
+
+
+
+
+#!/bin/bash
+
+WEJSCIE="$1"
+WYJSCIE="$2"
+
+echo "Plik wejsciowy ${WEJSCIE} plik wyjsciowy ${WYJSCIE}"
+
+#for (( i=0; i < 10; i++ )) ; 
+#do 
+	#echo "Hello World" > $2
+	#echo "$i" >> $2
+#done
+
+for i in `cat $WEJSCIE`
+do
+	#if [ $IFS -eq "\n"] ;
+	#then
+		echo "$i" >> $WYJSCIE
+	#fi
+done
+
+
+#echo "Plik nie  dziala " > "$WYJSCIE"
+#!/bin/bash
+# zadanie 3
+if [ -e $2 ] ;
+then
+	rm $2
+else
+	echo "$2 nie istnieje"
+fi
+for i in `cat $1`
+do
+	if [[ "$i" == [a-z]  ]] ;
+	then
+		#echo "wystepuja litery a-z + $i"
+		echo -n "$i " >> $2
+	else
+		#echo "nie wystepuja litery a-z + $i"
+		echo -n "$i " >>  $3
+	fi
+done
+
+
