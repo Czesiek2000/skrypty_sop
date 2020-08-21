@@ -1,0 +1,105 @@
+Argumenty skryptu
+$1 - 1-9 wartosci argumentow podawane przy uruchomieniu skryptu
+$@ - All arguments, starting from first (strings)
+$# - Number of arguments (number)
+$* - All arguments
+$? - exit status
+
+Operacje na plikach
+-f czy jest to plik
+-d czy jest to katalog
+-e exists 
+-s non zero size / empty
+-r file has read permission 
+-w file has write permission 
+-x file has execute permission 
+
+chmod variables
+1. 7 : Read, Write & Execute
+2. 6 : Read & Write
+3. 5 : Read & Execute
+4. 4 : Read Only
+5. 3 : Write & Execute
+6. 2 : Write Only
+7. 1 : Execute Only
+8. 0 : None
+
+for loop 
+for i in `ls .`
+do
+    echo $i
+done
+
+wypisanie lini
+cat $PLIK | while read LINE
+do
+    echo $LINE
+done
+
+komendy
+wc - czyta plik albo podany jako cat $PLIK | wc albo jako wc $PLIK i wypisuje statystyke z czytanego pliku:  newline count, word count, and byte count
+    -c number of bytes from stdin or input file
+    -l numer of lines from stdin or input file
+    -w number of words from stdin or input file
+    -m number of characters from stdin or input file
+
+find [sciezka] -type [f/d] -maxdepth liczba_do_zaglebienia
+
+head -n [linia] - wyswietla od poczatku linie ktore sa podane jako arugment
+tail -n [linia] - wyswietla od konca linie ktore sa podane jako arugment
+
+bc przyklad
+echo 2 / 2 | bc - poda wynik
+
+ls - listuje pliki i foldery w katalogu
+    -l wyswietla pliki razem z danymi o uprawnieniach, dacie utworzenia, kto utworzyl, nazwe pliku
+    -a wyswietla katalogi ukryte
+    -1 wyswietla w nowej lini nazwy plikow
+    -A wyswietla wszystko oprocz . i ..
+    -C zmusza do wyswietlenia w wielu kolumnach, default gdy wypisuje w terminalu
+    -c Use time when file status was last changed
+        -l wyswietlenie
+        -t  sortowanie po dacie
+    -d katalogi wyswietlane jako tekst (nie szuka rekursywnie)
+    -F wyswietla na koncu nazwy / gdy znjadzie katalog a * gdy znjadzie plik
+    -G kolory output, gdy jest to zadeklarowane w konfigu 
+    -g w polaczeniu z -l wyswietla wszystko co samo -l tylko bez nazwy usera ktory stworzyl plik This option is only available for compatibility with POSIX; 
+    -h w polaczeniu z -l wyswietla rozmiar plikow w katalogu
+    -s w polaczeniu z -k wyswietla rozmiar pliku w kilobajtach nie blokowo
+    -m wyswietla zawartosc kazda folderu po ,
+    -p dodaje na koncu kazdego pliku / jezeli jest katalogiem
+    -R rekursywnie przeszukuje katalog i podkatalogi od katalogu w ktorym sie znajduje
+    -S sortuje po rozmiarze
+    -t sortuje po czasie modyfikacji
+    -u Use time of last access, instead of last modification of the file
+        -t sortowanie
+        -l wyswietla
+    -U Use time of file creation, instead of last modification
+        -t sortowanie
+        -l wyswietla
+
+diff - porownanie plikow
+    -
+    -
+    -
+grep - regex 
+    -
+    -
+    -
+
+date pokazuje date
+    -d 
+
+mv przenosi pliki 
+    - mv [File1] [file2] zamiana nazwy file1 na file2
+    - mv [File1] [file2] file2 nowa lokalizacja pliku, przenosi plik File1 do folderu o sciezce file2
+rm
+    -r directory z zawartoscia
+    
+rmdir 
+    -usuwa folder 
+
+
+usuniecie ostatniego elementu ze stringa
+x=foo
+${x%?} # fo
