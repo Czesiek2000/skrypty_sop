@@ -9,10 +9,11 @@ Operacje na plikach
 -f czy jest to plik
 -d czy jest to katalog
 -e exists 
--s non zero size / empty
+-s non zero size / empty zwraca true gdy plik jest wiekszy niz 0
 -r file has read permission 
 -w file has write permission 
--x file has execute permission 
+-x file has execute permission
+-z pusty string
 
 chmod variables
 1. 7 : Read, Write & Execute
@@ -48,6 +49,8 @@ find [sciezka] -type [f/d] -maxdepth liczba_do_zaglebienia
 head -n [linia] - wyswietla od poczatku linie ktore sa podane jako arugment
 tail -n [linia] - wyswietla od konca linie ktore sa podane jako arugment
 
+cut -d " " -fPARAMETR 
+
 bc przyklad
 echo 2 / 2 | bc - poda wynik
 
@@ -79,7 +82,7 @@ ls - listuje pliki i foldery w katalogu
         -l wyswietla
 
 diff - porownanie plikow
-    -
+    -q
     -
     -
 grep - regex 
@@ -89,6 +92,10 @@ grep - regex
 
 date pokazuje date
     -d 
+
+tr "[a-z]" "[A-Z]" zamienia znaki podane w nawiasach ktore wystapily w danym tekscie
+    -s " " usuwa dany znak ktory wystapil w stringu
+
 
 mv przenosi pliki 
     - mv [File1] [file2] zamiana nazwy file1 na file2
