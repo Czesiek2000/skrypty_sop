@@ -1,0 +1,11 @@
+    # Do odwracania ciagu cyfr
+#!/bin/bash
+    exit 0
+fi
+    then
+#!/bin/bash
+#!/bin/bash
+#!/bin/bash
+#!/bin/bash
+#!/bin/bash
+    then
