@@ -1,0 +1,4 @@
+aabbcc
+ahc
+efg
+ABC

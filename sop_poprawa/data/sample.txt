@@ -1,0 +1,9 @@
+apple 
+pear
+ball 
+ant 
+eat
+pant
+people
+taste
+
