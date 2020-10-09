@@ -1,0 +1,287 @@
+Zadanie 1
+Napisz skrypt, który zapisze do pliku P te spośród swoich argumentów, które są nazwami niepustych
+plików zwykłych. W pliku P powinniśmy zapisać nazwę pliku, liczbę znaków w pliku i uprawnienia, które posiadamy
+do tego pliku w formacie "rwx". Nazwa pliku P musi być podana z klawiatury. Na końcu plik P musi zostać
+skopiowany do katalogów domowych wszystkich użytkowników. 
+
+Zadanie 2
+Napisz skrypt, który zapisze do pliku P te spośród swoich argumentów, które są nazwami niepustych
+plików zwykłych. W pliku P powinniśmy zapisać nazwę pliku, liczbę znaków w pliku i uprawnienia, które posiadamy
+do tego pliku w formacie "rwx". Nazwa pliku P musi być podana z klawiatury. Na końcu plik P musi zostać
+skopiowany do katalogów domowych wszystkich użytkowników. 
+
+
+Zadanie 3     
+Napisz skrypt, który zapisze do pliku P te spośród swoich argumentów, które są nazwami pustych plików
+zwykłych, do których mamy prawo zapisu lub pustych katalogów. Nazwa pliku P musi być podana jako pierwszy
+argument, a reszta argumentów są to argumenty, które testujemy i które być może będziemy zapisywać do pliku P.
+Na końcu plik P musi zostać skopiowany do katalogów domowych wszystkich użytkowników. 
+
+Zadanie 4
+Napisz skrypt, który zapisze do pliku P te spośród swoich argumentów, które są nazwami niepustych
+plików zwykłych. W pliku P powinniśmy zapisać nazwę pliku, liczbę znaków w pliku i uprawnienia, które posiadamy
+do tego pliku w formacie "rwx". Nazwa pliku P musi być podana z klawiatury. Na końcu plik P musi zostać
+skopiowany do katalogów domowych wszystkich użytkowników. 
+
+Zadanie 5
+Napisz skrypt, który zapisze do pliku P te spośród swoich argumentów, które są nazwami pustych plików
+zwykłych, do których mamy prawo zapisu lub pustych katalogów. Nazwa pliku P musi być podana jako pierwszy
+argument, a reszta argumentów są to argumenty, które testujemy i które być może będziemy zapisywać do pliku P.
+Na końcu plik P musi zostać skopiowany do katalogów domowych wszystkich użytkowników. 
+
+
+Zadanie 6     
+Napisz skrypt, który pobierze dwa argumenty. Jeżeli oba są plikami do odczytu to porównujemy ich
+zawartość. Jeżeli ich zawartość pod każdym względem (liczba znaków, liczba słów, liczba linii i ich zawartość)
+jest identyczna, to wyświetlamy kopiujejmy te pliki do katalogów domowych wszystkich uzytkowników, a jeżeli się
+czymś różnią to wyświetlamy pierwszą linię, którą się różnią i kończymy skrypt. 
+
+
+Zadanie 7     
+Napisz skrypt, który zapisze do pliku P te spośród swoich argumentów, które są nazwami pustych plików
+zwykłych, do których mamy prawo zapisu lub pustych katalogów. Nazwa pliku P musi być podana jako pierwszy
+argument, a reszta argumentów są to argumenty, które testujemy i które być może będziemy zapisywać do pliku P.
+Na końcu plik P musi zostać skopiowany do katalogów domowych wszystkich użytkowników. 
+
+
+Zadanie 8     
+Napisz skrypt, który zapisze do pliku P te spośród swoich argumentów, które są nazwami pustych plików
+zwykłych, do których mamy prawo zapisu lub pustych katalogów. Nazwa pliku P musi być podana jako pierwszy
+argument, a reszta argumentów są to argumenty, które testujemy i które być może będziemy zapisywać do pliku P.
+Na końcu plik P musi zostać skopiowany do katalogów domowych wszystkich użytkowników. 
+
+
+Zadanie 9     
+Napisz skrypt, który wyświetli liczbę znaków, w nazwach tych plików ze wszystkich katalogów i
+podkatalogów z katalogu domowego bieżącego użytkownika, w których treści nie ma żadnej litery, a nazwa ma tylko
+parzystą liczbę znaków. 
+
+
+Zadanie 10     
+Napisz skrypt, który wyświetli liczbę słów o nieparzystej liczbie znaków, nie zaczynających się na
+samogłoskę w plikach, które są w katalogach podanych jako klawiatury. Liczba katlaogów podana jest jako
+argument. 
+
+
+Zadanie 11     
+Napisz skrypt, który wypisze przedostatni wyraz z trzeciej linii od końca z tych plików, które są w
+katalogach podanych jako argumenty, w których treści i w nazwie nie ma żadnej cyfry. 
+
+
+Zadanie 12     
+Napisz skrypt, który wypisze liczbę wszystkich plików w tych katalogach z katalogu podanego jako
+argument, w których są przynajmniej cztery pliki z rozszerzeniem, które konczy się na znak 'x', które można
+uruchomić, ale których nazwy są palindromami (Palindrom, wyraz, który tak samo brzmi od tyłu jak i od przodu
+np.: kajak). 
+
+
+Zadanie 13
+Napisz skrypt, który wypisze nazwy tych katalogów (bez pierwszego znaku) z katalogu podanego jako
+argument, w których są przynajmniej trzy pliki z rozszerzeniem exe lub sh lub bez rozszerzenia, które można
+uruchomić. 
+
+
+Zadanie 14     
+Napisz skrypt, który wypisze nazwy tych katalogów (bez pierwszego znaku) z katalogu podanego jako
+argument, w których są przynajmniej trzy pliki z rozszerzeniem exe lub sh lub bez rozszerzenia, które można
+uruchomić. 
+
+
+Zadanie 15
+Napisz skrypt, który wyświetli liczbę znaków, w nazwach tych plików ze wszystkich katalogów i
+podkatalogów z katalogu domowego bieżącego użytkownika, w których treści nie ma żadnej litery, a nazwa ma tylko
+parzystą liczbę znaków. 
+
+
+Zadanie 16     
+Napisz skrypt, który pobierze co najmniej trzy argumenty PLIKWEJSCIOWY, PLIKWYJSCIOWY1,
+PLIKWYJSCIOWY2. Plików wejściowych może być więcej (ich nazwy są podane przed nazwami plików wyjściowych) i dla
+kazdego z nich musi zostać wykonana poniższa operacja. 
+Skrypt ma przepisze wszystkie linie zawierające wyłącznie słowa o parzystej liczbie znaków do
+PLIKWYJSCIOWY1, o pozostałe do PLIKWYJSCIOWY2. 
+Skrypt ma wyświetlić ile linii oraz ile znaków różnych od spacji zostało zapisanych do pliku
+wyjściowego 1 a ile do pliku wyjściowego 2. 
+Skrypt ma sprawdzać błędy. 
+Przykład: 
+Mamy PLIKWEJSCIOWY: 
+12323 332 33w 434 532 
+4332 23 32 
+1333 2ewe 2a 
+9r 23 
+Ala ma kota 
+PLIKWYJSCIOWY1 
+9332 23 32 
+1333 2ewe 2a 
+9r 23 
+     
+PLIKWYJSCIOWY2 
+12323 332 33w 434 532 
+Ala ma kota 
+
+
+Zadanie 17     
+Napisz skrypt, który pobierze trzy argumenty PLIKWEJSCIOWY, PLIKWYJSCIOWY1, PLIKWYJSCIOWY2. Jak
+argumenty sa poprawne to skrypt ma przepisać wszystkie linie zawierajace ciągi rosnące do PLIKWYJSCIOWY1, o
+ciągi malejące do PLIKWYJSCIOWY2. Linie które nie są poprawnymi ciągami rosnacymi lub malejącymi ignorujemy, ale
+wyświetlamy ile takich ciągów było, i ile miały elementów. 
+Plików wejściowych może być więcej (ich nazwy są podane przed nazwami plików wyjściowych) i dla
+kazdego z nich musi zostać wykonana powyższa operacja. 
+Przykład: 
+Mamy PLIKWEJSCIOWY jak poniżej: 
+1 2 3 a 4 5 
+1 2 3 4 5 
+9 2 3 b 
+54 45 33 
+1 2 a l a i o l a 
+9 2 c 
+5 5 5 
+1 2 3 4 
+4 3 2 1 
+1 1 1 2 
+
+Przykład: 
+PLIKWYJSCIOWY1 
+1 2 3 4 5 
+1 2 3 4 
+     
+PLIKWYJSCIOWY2 
+54 45 33 
+4 3 2 1 
+     
+
+
+Zadanie 18     
+Napisz skrypt, który pobierze dwa argumenty PLIKWEJSCIOWY, PLIKWYJSCIOWY. Jeżeli PLIKWEJSCIOWY zawiera
+macierz prostokątną lub kwadratową to skrypt ma wykonać transpozycję takiej macierzy i zapisać ją do
+PLIKWYJSCIOWY. 
+
+Plików wejściowych może być więcej (ich nazwy są podane przed nazwami plików wyjściowych) i dla
+kazdego z nich musi zostać wykonana powyższa operacja. Wszystkie macierze z kolejnych plików wejściowych mają
+być dopisywane do pliku wyjściowego. 
+
+Przykład: 
+PLIKWEJSCIOWY: 
+1 2 3 4 
+a b c d 
+qq ww ee rr 
+
+PLIKWYJSCIOWY 
+1 a qq 
+2 b ww 
+3 c ee 
+4 d rr 
+
+
+Zadanie 19     
+W pliku, którego nazwa została podana z klawiatury, mamy listę plików lub katalogów jak np.: 
+Plik1.txt plik2.txt plik3.txt katalog1 
+Plik4.txt nieplik.txt katalog2 plik5.txt 
+Plik6.txt 
+
+Napisz skrypt, który przeanalizuje plik o takiej zawartości i wyświetli, informacje jak poniżej: 
+W pliku Plik1.txt mamy 16 cyfr i 3411 litery. 
+W pliku plik2.txt mamy 164 cyfr i 343 litery. 
+W pliku plik3.txt mamy 136 cyfr i 314 litery. 
+W katalogu katalog1 mamy 45 plików i 34 inne katalogi i 4 łącza 
+W pliku Plik4.txt mamy 126 cyfr i 334 litery. 
+Nazwa nieplik.txt to nie jest nazwa pliku 
+W katalogu katalog1 mamy 5 plików i 0 innych katalogi i 2 łącza 
+W pliku plik5.tx mamy 116 cyfr i 341 litery. 
+W pliku Plik6.txt mamy 1116 cyfr i 343 litery. 
+W sumie mamy 1674 cyfr i 5086 liter. 
+
+Uwaga lista plików może się zmieniać. 
+
+
+Zadanie 20     
+Napisz skrypt, który pobierze dwa argumenty PLIKWEJSCIOWY, PLIKWYJSCIOWY. Jeżeli PLIKWEJSCIOWY zawiera
+macierz prostokątną lub kwadratową to skrypt ma wykonać transpozycję takiej macierzy i zapisać ją do
+PLIKWYJSCIOWY. 
+
+Plików wejściowych może być więcej (ich nazwy są podane przed nazwami plików wyjściowych) i dla
+kazdego z nich musi zostać wykonana powyższa operacja. Wszystkie macierze z kolejnych plików wejściowych mają
+być dopisywane do pliku wyjściowego. 
+
+Przykład: 
+PLIKWEJSCIOWY: 
+1 2 3 4 
+a b c d 
+qq ww ee rr 
+
+PLIKWYJSCIOWY 
+1 a qq 
+2 b ww 
+3 c ee 
+4 d rr 
+
+
+Zadanie 21     
+Napisz skrypt, który pobierze co najmniej trzy argumenty PLIKWEJSCIOWY, PLIKWYJSCIOWY1,
+PLIKWYJSCIOWY2. Plików wejściowych może być więcej (ich nazwy są podane przed nazwami plików wyjściowych) i dla
+kazdego z nich musi zostać wykonana poniższa operacja. 
+
+Skrypt ma przepisze wszystkie linie zawierające wyłącznie słowa o parzystej liczbie znaków do
+PLIKWYJSCIOWY1, o pozostałe do PLIKWYJSCIOWY2. 
+
+Skrypt ma wyświetlić ile linii oraz ile znaków różnych od spacji zostało zapisanych do pliku
+wyjściowego 1 a ile do pliku wyjściowego 2. 
+
+Skrypt ma sprawdzać błędy. 
+
+Przykład: 
+Mamy PLIKWEJSCIOWY: 
+12323 332 33w 434 532 
+4332 23 32 
+1333 2ewe 2a 
+9r 23 
+Ala ma kota 
+
+PLIKWYJSCIOWY1 
+9332 23 32 
+1333 2ewe 2a 
+9r 23 
+     
+PLIKWYJSCIOWY2 
+12323 332 33w 434 532 
+Ala ma kota 
+
+
+Zadanie 22     
+Napisz skrypt, który pobierze dwa argumenty PLIKWEJSCIOWY, PLIKWYJSCIOWY. Jeżeli PLIKWEJSCIOWY zawiera
+macierz prostokątną lub kwadratową to skrypt ma wykonać transpozycję takiej macierzy i zapisać ją do
+PLIKWYJSCIOWY. 
+
+Plików wejściowych może być więcej (ich nazwy są podane przed nazwami plików wyjściowych) i dla
+kazdego z nich musi zostać wykonana powyższa operacja. Wszystkie macierze z kolejnych plików wejściowych mają
+być dopisywane do pliku wyjściowego. 
+
+Przykład: 
+PLIKWEJSCIOWY: 
+1 2 3 4 
+a b c d 
+qq ww ee rr 
+
+PLIKWYJSCIOWY 
+1 a qq 
+2 b ww 
+3 c ee 
+4 d rr 
+
+
+     
+W pliku, którego nazwa została podana z klawiatury, mamy listę plików lub katalogów jak np.: 
+Plik1.txt plik2.txt plik3.txt katalog1 
+Plik4.txt nieplik.txt katalog2 plik5.txt 
+Plik6.txt 
+Napisz skrypt, który przeanalizuje plik o takiej zawartości i wyświetli, informacje jak poniżej: 
+W pliku Plik1.txt mamy 16 cyfr i 3411 litery. 
+W pliku plik2.txt mamy 164 cyfr i 343 litery. 
+W pliku plik3.txt mamy 136 cyfr i 314 litery. 
+W katalogu katalog1 mamy 45 plików i 34 inne katalogi i 4 łącza 
+W pliku Plik4.txt mamy 126 cyfr i 334 litery. 
+Nazwa nieplik.txt to nie jest nazwa pliku 
+W katalogu katalog1 mamy 5 plików i 0 innych katalogi i 2 łącza 
+W pliku plik5.tx mamy 116 cyfr i 341 litery. 
+W pliku Plik6.txt mamy 1116 cyfr i 343 litery. 
+W sumie mamy 1674 cyfr i 5086 liter. 
+Uwaga lista plików może się zmieniać. 
